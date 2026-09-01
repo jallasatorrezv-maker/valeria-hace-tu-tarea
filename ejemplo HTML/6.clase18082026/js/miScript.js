@@ -1,8 +1,8 @@
 alert("si funciona");
-function Multiplicar(a,b){
-    let a=parseInt(prompt("ingrese  un numero:"));
+);function Multiplicar(a,b){
     let b=parseInt(prompt("ingrese  un numero:"));
     let num1 =a;
+    let a=parseInt(prompt("ingrese  un numero:"));
     let num2 =b;
     if(num1<0){ 
         num1=num1;}
