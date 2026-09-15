@@ -1,0 +1,29 @@
+body{  
+    background-color: #f0f0f0;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.titulo{
+    text-align: center;
+    color: #333;
+}
+.titulo1{
+    text-align: center;
+    color: #af6d6d;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+th{
+  background-color: #b37f7f;
+  border: 1px solid #681717;
+  text-align: center;
+  font-size: 20px;
+  color: #843535;
+}
+tr,td{
+    border: 2px solid #681717;
+}
+
