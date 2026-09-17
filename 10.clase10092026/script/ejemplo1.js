@@ -28,7 +28,6 @@ function eliminarEstudiante() {
         mostrarEstudiantes();
     }
 }
-
 function mostrarEstudiantes() {
     let respuesta = document.getElementById("respuesta");
     respuesta.style.whiteSpace = "pre-line";
@@ -36,10 +35,15 @@ function mostrarEstudiantes() {
     let textoFinal = "";
 
     for (let i = 0; i < estudiantes.length; i++) {
-        textoFinal += (i + 1) + "." + estudiantes[i].nombre + " " + estudiantes[i].apellidos + " " + estudiantes[i].fechaNacimiento + "\n";
+        textoFinal += (i + 1) + " "
+         + estudiantes[i].nombre + " "
+         + estudiantes[i].apellidos + "-"
+        + estudiantes[i].fechaNcimiento+ " "
+         + estudiantes[i].edad + "años - "
+          + estudiantes[i].genero+ "\n " ;
     }
 
     respuesta.textContent = textoFinal;
 }
 
-mostrarEstudiantes();
+mostrarEstudiantes()

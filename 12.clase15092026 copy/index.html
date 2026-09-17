@@ -11,10 +11,34 @@
 <body>
     <h1 class="titulo">CREACION DE TABLAS</h1>
     <h2 class="titulo1">listado de estudiantes</h2>
-    <table>
-        <thead>
+     <h3>LISTA DE EST.</h3>
 
-            <tr>
+    <label for="nombre">Nombre: </label>
+    <input type="text" id="nombre"><br><br>
+
+    <label for="apellido">Apellido: </label>
+    <input type="text" id="apellido"><br><br>
+
+    <label for="fechaNacimiento">Fecha de nacimiento: </label>
+    <input type="date" id="fechaNacimiento"><br><br>
+
+    <label for="edad">Edad: </label>
+    <input type="text" id="edad"><br><br>
+   
+    <label for="genero">genero: </label>
+    <select id="genero">
+    <option  value="">seleccione</option>
+    <option value="Masculino">Masculino</option>
+    <option value="Femenino">Femenino</option>
+    </select><br><br>
+
+    <button onclick="adicionarEstudiante()">Adicionar</button>
+    <button onclick="eliminarEstudiante()">Eliminar</button>
+
+    <br><br>
+
+    <div id="respuesta"></div>
+    <table>
                 <th>Nro</th>
                 <th>Nombre</th>
                 <th>Apellidos</th>

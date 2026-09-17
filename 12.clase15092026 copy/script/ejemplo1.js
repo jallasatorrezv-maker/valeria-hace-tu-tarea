@@ -102,5 +102,24 @@ function mostrarEstudiantes()
     );
 }
 
-    mostrarEstudiantes();
+mostrarEstudiantes();
 
+
+function adicionarEstudiante() {
+    const nombre = document.getElementById("nombre").value;
+    const apellido = document.getElementById("apellido").value;
+    const fechaNacimiento = document.getElementById("fechaNacimiento").value;
+    const edad = document.getElementById("edad").value;
+    const genero = document.getElementById("genero").value;
+
+    listaEstudiantes.push({
+        nro: listaEstudiantes.length + 1,
+        nombre: nombre,
+        apellido: apellido,
+         "fecha de nacimiento": fechaNacimiento,
+        edad: edad,
+        genero: genero
+    });
+
+    mostrarEstudiantes();
+}
